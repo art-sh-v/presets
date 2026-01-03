@@ -1,0 +1,20 @@
+#$ TITLE: Custom NMEA commands
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: OTHER
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: gps, custom commands, nmea
+#$ AUTHOR: KMfpv
+#$ DESCRIPTION: GPS with NMEA protocol only (most non-UBLOX Modules) based on MediaTek or GoTop Chipsets
+
+# rxfail
+rxfail 2 s 1550
+rxfail 3 s 1275
+rxfail 7 s 1000
+
+# master
+set failsafe_delay = 200
+set failsafe_off_delay = 200
+set failsafe_throttle = 1275
+set failsafe_throttle_low_delay = 300
+set failsafe_procedure = AUTO-LAND
+set osd_canvas_height = 13
